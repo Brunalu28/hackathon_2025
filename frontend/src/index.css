@@ -1,0 +1,39 @@
+:root {
+  /* Ajuste a cor para combinar com a logo */
+  --brand: #001529;
+  --bg-layout: #f5f6fa;
+  --bg-card: #ffffff;
+  --text: #1f1f1f;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg-layout);
+  /* Força o tema claro */
+  color-scheme: light;
+}
+
+/* Garante que o antd não herde fundo escuro */
+.ant-layout {
+  background: var(--bg-layout) !important;
+}
+
+/* Conteúdo principal */
+.app-content {
+  padding: 24px;
+}
+
+/* Cartões com cantos suaves */
+.ant-card {
+  border-radius: 16px;
+}
+
